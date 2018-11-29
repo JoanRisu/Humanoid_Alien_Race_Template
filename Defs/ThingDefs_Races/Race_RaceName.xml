@@ -163,23 +163,68 @@
                         <weight>10</weight>
                         <only>RGBA(0.541,0.42,0.118,1)</only>
                     </li>
-                </options>
+                </options>false
             </alienhairsecondcolorgen>
 			-->
-			<!--
+			
             <bodyAddons>
             <li>
-				<path>Things/Pawn/Tails/Tail</path>
-                <bodyPart>Tail</bodyPart>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Head</bodyPart>
                 <useSkinColor>true</useSkinColor>
-                <inFrontOfBody>false</inFrontOfBody>
+                <inFrontOfBody>true</inFrontOfBody>
+                <layerOffset>-0.0</layerOffset>
                 <offsets>
                 <south>
                                     <bodyTypes>
-                                    <Male>(0,-0.22)</Male>
-                                    <Female>(0,-0.22)</Female>
-                                    <Fat>(0,-0.22)</Fat>
-                                    <Thin>(0,-0.22)</Thin>
+                                    <Male>(-0.42,0.6)</Male>
+                                    <Female>(-0.42,0.6)</Female>
+                                    <Fat>(-0.42,0.6)</Fat>
+                                    <Thin>(-0.42,0.6)</Thin>
+                                    <Hulk>(-0.42,0.6)</Hulk>
+                                    </bodyTypes>
+                </south>
+
+                <north>
+                                    <bodyTypes>
+                                    <Male>(0,0.9)</Male>
+                                    <Female>(0,0.9)</Female>
+                                    <Fat>(0,0.9)</Fat>
+                                    <Thin>(0,0.9)</Thin>
+                                    <Hulk>(0,0.9)</Hulk>
+                                    </bodyTypes>
+                </north>
+
+                <east>
+                                    <bodyTypes>
+                                    <Male>(-0.48,0.6)</Male>
+                                    <Female>(-0.48,0.6)</Female>
+                                    <Fat>(-0.48,0.6)</Fat>
+                                    <Thin>(-0.48,0.6)</Thin>
+                                    <Hulk>(-0.48,0.6)</Hulk>
+                                    </bodyTypes>
+                </east>
+                </offsets>
+                <hediffGraphics>
+                <IbexMHornMutation>Things/Pawn/Addons/Horns/Ibex_Horn_Male</IbexMHornMutation>
+                <IbexFHornMutation>Things/Pawn/Addons/Horns/Ibex_Horn_Female</IbexFHornMutation>
+                <GazelleHornMutation>Things/Pawn/Addons/Horns/Gazelle_Horn</GazelleHornMutation>
+                </hediffGraphics>
+                </li>
+            <li>
+				<path>Things/Pawn/Addons/Blank</path>
+                <bodyPart>Waist</bodyPart>
+                <useSkinColor>true</useSkinColor>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerOffset>-0.0</layerOffset>
+                <offsets>
+                <south>
+                                    <bodyTypes>
+                                    <Male>(-0.450,-0.0)</Male>
+                                    <Female>(-0.450,-0.0)</Female>
+                                    <Fat>(-0.450,-0.0)</Fat>
+                                    <Thin>(-0.450,-0.0)</Thin>
+                                    <Hulk>(-0.450,-0.0)</Hulk>
                                     </bodyTypes>
                 </south>
 
@@ -189,24 +234,27 @@
                                     <Female>(0,-0.25)</Female>
                                     <Fat>(0,-0.25)</Fat>
                                     <Thin>(0,-0.25)</Thin>
+                                    <Hulk>(0,-0.25)</Hulk>
                                     </bodyTypes>
                 </north>
 
                 <east>
                                     <bodyTypes>
-                                    <Male>(0,-0.22)</Male>
-                                    <Female>(0,-0.22)</Female>
-                                    <Fat>(0.02,-0.22)</Fat>
-                                    <Thin>(0,-0.22)</Thin>
+                                    <Male>(-0.22,-0.22)</Male>
+                                    <Female>(-0.22,-0.22)</Female>
+                                    <Fat>(-0.22,-0.22)</Fat>
+                                    <Thin>(-0.22,-0.22)</Thin>
+                                    <Hulk>(-0.22,-0.22)</Hulk>
                                     </bodyTypes>
                 </east>
                 </offsets>
                 <hediffGraphics>
-                <BionicTail>Things/Pawn/Tails/TailBionic</BionicTail>
+                <FoxTailMutation>Things/Pawn/Addons/Tails/Fox_Tail</FoxTailMutation>
+                <MonkeyTailMutation>Things/Pawn/Addons/Tails/Monkey_Tail</MonkeyTailMutation>
+                <RatTailMutation>Things/Pawn/Addons/Tails/Rat_Tail</RatTailMutation>
                 </hediffGraphics>
                 </li>
             </bodyAddons>
-			-->
             </alienPartGenerator>
             <chemicalSettings>
 			<!--
@@ -377,6 +425,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
       <leatherDef>Leather_RaceName</leatherDef>
+	  <fleshType>Flesh_RaceName</fleshType>
       <!-- 
 	  <nameCategory>HumanStandard</nameCategory>
       -->
