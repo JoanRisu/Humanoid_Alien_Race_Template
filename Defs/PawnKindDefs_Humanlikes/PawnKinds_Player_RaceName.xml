@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseRaceNamePawnKind">
+    <race>Alien_RaceName</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseRaceNamePawnKind">
+    <defName>RaceNamePlayerColonist</defName>
+    <label>colonist</label>
+    <defaultFactionType>RaceNamePlayerColony</defaultFactionType>
+    <backstoryCategories>
+			<li>RaceName_Standard</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseRaceNamePawnKind">
+    <defName>RaceNamePlayerTribal</defName>
+    <label>colonist</label>
+    <defaultFactionType>RaceNamePlayerColonyTribal</defaultFactionType>
+    <backstoryCategories>
+			<li>Tribal</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>Neolithic</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>
