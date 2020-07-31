@@ -3,7 +3,7 @@
 <Defs>
   <FleshTypeDef>
     <defName>Flesh_RaceName</defName>
-    <corpseCategory>CorpsesAnimal</corpseCategory>
+    <corpseCategory>CorpsesHumanlike</corpseCategory>
     <!-- <corpseCategory>CorpsesMechanoid</corpseCategory> -->
 	<!-- 
     <ateDirect>AteInsectMeatDirect</ateDirect>
