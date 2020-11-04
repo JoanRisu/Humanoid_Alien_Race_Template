@@ -15,15 +15,23 @@
     <basicMemberKind>RaceNamePlayerColonist</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+	<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategories>
-			<li>Civil</li>
-			<li>Raider</li>
-  	</backstoryCategories>
-    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-    <expandingIconTexture>World/WorldObjects/IconHuman</expandingIconTexture>
+	<backstoryFilters>
+	  <li>
+		<categories>
+		<li>Pirate</li>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+		</categories>
+	  </li>
+	</backstoryFilters>
+	<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<!--
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	-->
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
@@ -45,19 +53,29 @@
     <basicMemberKind>RaceNamePlayerTribal</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <techLevel>Ultra</techLevel>
+	<backstoryFilters>
+	  <li>
+		<categories>
+		<li>Tribal</li>
+		</categories>
+	  </li>
+	</backstoryFilters>
     <backstoryCategories>
-			<li>Tribal</li>
+		<li>Tribal</li>
   	</backstoryCategories>
-    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
-    <expandingIconTexture>World/WorldObjects/IconHuman</expandingIconTexture>
+	<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+	<!--
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	-->
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
     <hairTags>
-      <li>Civil</li>
+      <li>Tribal</li>
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>

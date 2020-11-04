@@ -111,6 +111,11 @@
             <forcedRaceTraitEntries>
 
             </forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li>
+					<defName>Cannibal</defName>
+				</li>
+            </disallowedTraits>
             <alienPartGenerator>
 				<!-- game looks for files in the <head> path named aliencrowntypes_south, _east, _north (And _west, if present, it is not required though) (If genderedHeads is enabled suffix should me _Male_south or _Female_south)(Masks use the same nameing convetion but with an m at the end e.g. _southm)-->
                 <aliencrowntypes>
@@ -129,131 +134,130 @@
                 <li>Fat</li>
                 <li>Female</li>
                 </alienbodytypes>
-				<!--
-                <alienskincolorgen Class="ColorGenerator_Options">
-                    <options>
-             <li>
-                <weight>5</weight>
-                <only>RGBA(1.0,1.0,1.0,1)</only>
-            </li>
-                    </options>
-                </alienskincolorgen>
-                	<alienskinsecondcolorgen Class="ColorGenerator_Options">
-                <options>
-				    <li>
-                        <weight>10</weight>
-                        <only>RGBA(0.541,0.42,0.118,1)</only>
-                    </li>
-                </options>
-            </alienskinsecondcolorgen>
-			-->
-			<!--
-                <alienhaircolorgen Class="ColorGenerator_Options">
-                    <options>
-             <li>
-                <weight>5</weight>
-                <only>RGBA(1.0,1.0,1.0,1)</only>
-            </li>
-                    </options>
-                </alienhaircolorgen>
-                	<alienhairsecondcolorgen Class="ColorGenerator_Options">
-                <options>
-				    <li>
-                        <weight>10</weight>
-                        <only>RGBA(0.541,0.42,0.118,1)</only>
-                    </li>
-                </options>false
-            </alienhairsecondcolorgen>
-			-->
-			
-            <bodyAddons>
-            <li>
-				<path>Things/Pawn/Addons/Blank</path>
-                <bodyPart>Head</bodyPart>
-                <useSkinColor>true</useSkinColor>
-                <inFrontOfBody>true</inFrontOfBody>
-                <layerOffset>-0.0</layerOffset>
-                <offsets>
-                <south>
-                                    <bodyTypes>
-                                    <Male>(-0.42,0.6)</Male>
-                                    <Female>(-0.42,0.6)</Female>
-                                    <Fat>(-0.42,0.6)</Fat>
-                                    <Thin>(-0.42,0.6)</Thin>
-                                    <Hulk>(-0.42,0.6)</Hulk>
-                                    </bodyTypes>
-                </south>
-
-                <north>
-                                    <bodyTypes>
-                                    <Male>(0,0.9)</Male>
-                                    <Female>(0,0.9)</Female>
-                                    <Fat>(0,0.9)</Fat>
-                                    <Thin>(0,0.9)</Thin>
-                                    <Hulk>(0,0.9)</Hulk>
-                                    </bodyTypes>
-                </north>
-
-                <east>
-                                    <bodyTypes>
-                                    <Male>(-0.48,0.6)</Male>
-                                    <Female>(-0.48,0.6)</Female>
-                                    <Fat>(-0.48,0.6)</Fat>
-                                    <Thin>(-0.48,0.6)</Thin>
-                                    <Hulk>(-0.48,0.6)</Hulk>
-                                    </bodyTypes>
-                </east>
-                </offsets>
-                <hediffGraphics>
-                <IbexMHornMutation>Things/Pawn/Addons/Horns/Ibex_Horn_Male</IbexMHornMutation>
-                <IbexFHornMutation>Things/Pawn/Addons/Horns/Ibex_Horn_Female</IbexFHornMutation>
-                <GazelleHornMutation>Things/Pawn/Addons/Horns/Gazelle_Horn</GazelleHornMutation>
-                </hediffGraphics>
-                </li>
-            <li>
-				<path>Things/Pawn/Addons/Blank</path>
-                <bodyPart>Waist</bodyPart>
-                <useSkinColor>true</useSkinColor>
-                <inFrontOfBody>false</inFrontOfBody>
-                <layerOffset>-0.0</layerOffset>
-                <offsets>
-                <south>
-                                    <bodyTypes>
-                                    <Male>(-0.450,-0.0)</Male>
-                                    <Female>(-0.450,-0.0)</Female>
-                                    <Fat>(-0.450,-0.0)</Fat>
-                                    <Thin>(-0.450,-0.0)</Thin>
-                                    <Hulk>(-0.450,-0.0)</Hulk>
-                                    </bodyTypes>
-                </south>
-
-                <north>
-                                    <bodyTypes>
-                                    <Male>(0,-0.25)</Male>
-                                    <Female>(0,-0.25)</Female>
-                                    <Fat>(0,-0.25)</Fat>
-                                    <Thin>(0,-0.25)</Thin>
-                                    <Hulk>(0,-0.25)</Hulk>
-                                    </bodyTypes>
-                </north>
-
-                <east>
-                                    <bodyTypes>
-                                    <Male>(-0.22,-0.22)</Male>
-                                    <Female>(-0.22,-0.22)</Female>
-                                    <Fat>(-0.22,-0.22)</Fat>
-                                    <Thin>(-0.22,-0.22)</Thin>
-                                    <Hulk>(-0.22,-0.22)</Hulk>
-                                    </bodyTypes>
-                </east>
-                </offsets>
-                <hediffGraphics>
-                <FoxTailMutation>Things/Pawn/Addons/Tails/Fox_Tail</FoxTailMutation>
-                <MonkeyTailMutation>Things/Pawn/Addons/Tails/Monkey_Tail</MonkeyTailMutation>
-                <RatTailMutation>Things/Pawn/Addons/Tails/Rat_Tail</RatTailMutation>
-                </hediffGraphics>
-                </li>
-            </bodyAddons>
+				<bodyAddons>
+					<li>
+					  <path>Things/Pawn/Humanlike/Eldar/Heads/Ears/EarL</path>
+					  <bodyPart>left ear</bodyPart>
+					  <inFrontOfBody>true</inFrontOfBody>
+					  <drawnInBed>true</drawnInBed>
+					  <layerOffset>-0.27</layerOffset>
+					  <offsets>
+						  <south>
+							<bodyTypes>
+								<Male>(-0.42,0.5)</Male>
+								<Female>(-0.42,0.5)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(-0.0,0.0)</Average_Normal>
+								<Narrow_Normal>(0.0,0.0)</Narrow_Normal>
+								<Average_Wide>(0.02,0.0)</Average_Wide>
+								<Average_Pointy>(-0.0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </south>
+						  <north>
+							<bodyTypes>
+								<Male>(0,0.9)</Male>
+								<Female>(0,0.9)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(0,0.0)</Average_Normal>
+								<Narrow_Normal>(0,0.0)</Narrow_Normal>
+								<Average_Wide>(0,0.0)</Average_Wide>
+								<Average_Pointy>(0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </north>
+						  <east>
+							<bodyTypes>
+								<Male>(-0.48,0.5)</Male>
+								<Female>(-0.48,0.5)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(-0.0,0.0)</Average_Normal>
+								<Narrow_Normal>(-0.0,0.0)</Narrow_Normal>
+								<Average_Wide>(-0.0,0.0)</Average_Wide>
+								<Average_Pointy>(-0.0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </east>
+					  </offsets>
+						<colorChannel>skin</colorChannel>
+					  <hiddenUnderApparelFor>
+						<li>FullHead</li>
+						<li>UpperHead</li>
+					  </hiddenUnderApparelFor>
+					</li>
+					<li>
+					  <path>Things/Pawn/Humanlike/Eldar/Heads/Ears/EarR</path>
+					  <bodyPart>right ear</bodyPart>
+					  <inFrontOfBody>true</inFrontOfBody>
+					  <drawnInBed>true</drawnInBed>
+					  <layerOffset>-0.27</layerOffset>
+					  <offsets>
+						  <south>
+							<bodyTypes>
+								<Male>(-0.42,0.5)</Male>
+								<Female>(-0.42,0.5)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(-0.0,0.0)</Average_Normal>
+								<Female_Narrow_Normal>(0.01,0.0)</Female_Narrow_Normal>
+								<Narrow_Normal>(0.02,0.0)</Narrow_Normal>
+								<Average_Wide>(-0.01,0.0)</Average_Wide>
+								<Average_Pointy>(-0.0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </south>
+						  <north>
+							<bodyTypes>
+								<Male>(0,0.9)</Male>
+								<Female>(0,0.9)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(-0.0,0.0)</Average_Normal>
+								<Narrow_Normal>(-0.0,0.0)</Narrow_Normal>
+								<Average_Wide>(-0.0,0.0)</Average_Wide>
+								<Average_Pointy>(-0.0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </north>
+						  <east>
+							<bodyTypes>
+								<Male>(-0.48,0.5)</Male>
+								<Female>(-0.48,0.5)</Female>
+							</bodyTypes>
+							<crownTypes>
+								<Average_Normal>(-0.0,0.0)</Average_Normal>
+								<Narrow_Normal>(-0.0,0.0)</Narrow_Normal>
+								<Average_Wide>(-0.0,0.0)</Average_Wide>
+								<Average_Pointy>(-0.0,0.0)</Average_Pointy>
+							</crownTypes>
+						  </east>
+					  </offsets>
+						<colorChannel>skin</colorChannel>
+					  <hiddenUnderApparelFor>
+						<li>FullHead</li>
+						<li>UpperHead</li>
+					  </hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
+				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.9412,0.851,0.7804,1)</only>
+								</li>
+							</options>
+						</first>
+						<!--second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+								</li>
+							</options>
+						</second-->
+					</li>
+				</colorChannels>
             </alienPartGenerator>
             <chemicalSettings>
 			<!--
