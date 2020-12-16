@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 <!-- name, author and description are the important tags to change -->
-	<name>Basic Alien (Human) Race Template</name>
-	<author>Ogliss</author>
+	<name>Squirrel Race</name>
+	<author>Joan Risu</author>
 	<url></url>
 	<supportedVersions>
         <li>1.2</li>
 	</supportedVersions>
-	<packageId>Ogliss.HumanoidAlienRaceTemplate</packageId>
-	<description>basic humanlike alien race template
+	<packageId>JoanRisu.SqrlRace</packageId>
+	<description>A Federation of Humanoid Squirrels have come to Rimworld.
 	 </description>
     <modDependencies>
       <li>
